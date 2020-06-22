@@ -6,8 +6,7 @@ List topics:
 ./opt/kafka_2.12-2.3.0/bin/kafka-topics.sh --zookeeper zookeeper:2181 --list
 
 Create topic:
-./opt/kafka_2.12-2.3.0/bin/kafka-topics.sh --zookeeper zookeeper:2181 --topic first_topic --create --partitions 3 --replication-fa
-ctor 2
+./opt/kafka_2.12-2.3.0/bin/kafka-topics.sh --zookeeper zookeeper:2181 --topic first_topic --create --partitions 3 --replication-factor 2
 
 Delete topic:
 ./opt/kafka_2.12-2.3.0/bin/kafka-topics.sh --zookeeper zookeeper:2181 --topic first_topic --delete

@@ -10,7 +10,7 @@ async def send_one():
     await producer.start()
     try:
         # Produce message
-        await producer.send_and_wait("my_topic", b"Super message")
+        await producer.send_and_wait("first_topic", b"Super message")
     finally:
         # Wait for all pending messages to be delivered or expire.
         await producer.stop()
