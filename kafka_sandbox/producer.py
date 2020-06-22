@@ -21,7 +21,7 @@ async def send_one():
         loop=loop, 
         bootstrap_servers='localhost:9092',
         # Wait only the broker leader to succeed
-        acks=1,
+        acks=0,
         value_serializer=serializer,
         compression_type="gzip",)
     # Get cluster layout and initial topic/partition leadership information
